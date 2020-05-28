@@ -1,0 +1,133 @@
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 260px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+    color: #fff;
+}
+.divito {
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+.grids {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: 0.5rem;
+}
+
+.circle {
+    background: gray;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #fff;
+    height: 15.4em;
+    position: relative;
+    width: 15.4em;
+    cursor: pointer;
+}
+
+.circle-content {
+    hyphens: auto;
+    margin: 0.75em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@supports (shape-outside: circle(100%)) {
+    .circle-content {
+        margin: 0;
+    }
+    .circle::before,
+    .circle-content::before {
+        content: '';
+        height: 100%;
+        width: 50%;
+    }
+    .circle::before {
+        float: left;
+        shape-outside: polygon(
+            0 0,
+            100% 0,
+            60% 4%,
+            40% 10%,
+            20% 20%,
+            10% 28.2%,
+            5% 34.4%,
+            0 50%,
+            5% 65.6%,
+            10% 71.8%,
+            20% 80%,
+            40% 90%,
+            60% 96%,
+            100% 100%,
+            0 100%
+        );
+    }
+    .circle-content::before {
+        float: right;
+        shape-outside: polygon(
+            100% 0,
+            0 0,
+            40% 4%,
+            60% 10%,
+            80% 20%,
+            90% 28.2%,
+            95% 34.4%,
+            100% 50%,
+            95% 65.6%,
+            90% 71.8%,
+            80% 80%,
+            60% 90%,
+            40% 96%,
+            0 100%,
+            100% 100%
+        );
+    }
+}
+@media screen and (min-width: 45em) and (max-width: 60em) {
+    .grids div {
+        height: 12.4em;
+        width: 12.4em;
+    }
+    .ant-carousel .slick-slide {
+        height: 560px;
+    }
+    .grids {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4em;
+    }
+    .grids div:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .ant-carousel .slick-slide {
+        height: 560px;
+    }
+    .grids {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4em;
+    }
+    .grids div {
+        height: 15.4em;
+        width: 15.4em;
+    }
+    .grids div:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}

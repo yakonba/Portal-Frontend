@@ -1,0 +1,35 @@
+.unclickable {
+    pointer-events: none;
+}
+
+.break-row {
+    word-break: break-all;
+}
+
+.bg-th-header {
+    background-color: #fafafa !important;
+    border: 1px solid #e8e8e8;
+}
+
+.bg-th-header-cs {
+    background-color: #f4ffb8 !important;
+    border: 1px solid #e8e8e8;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover-effect {
+    :hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
+}
+
+.multi-line-truncate-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

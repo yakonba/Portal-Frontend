@@ -1,0 +1,13 @@
+.input-icon {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.input-icon-button {
+    margin-left: 0.5rem;
+
+    @media (max-width: 767px) {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}

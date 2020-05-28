@@ -1,0 +1,31 @@
+.logo {
+    height: 64px;
+    // height: 32px;
+    // background: rgba(255, 255, 255, 0.2);
+    // margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: $primary-color;
+}
+
+.fixed-sidebar {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 10000;
+}
+
+.sidebar-content-closer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    background-color: rgba(0, 0, 0, 0.1);
+}

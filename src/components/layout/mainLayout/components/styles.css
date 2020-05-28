@@ -1,0 +1,33 @@
+.Top {
+    padding: 35px 0;
+}
+
+.subTop {
+    margin: 0 auto;
+    position: relative;
+    width: 85%;
+}
+
+#menu {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    float: left;
+    padding-top: 0px;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+#menu li a:hover {
+    background-color: #2586d7;
+}

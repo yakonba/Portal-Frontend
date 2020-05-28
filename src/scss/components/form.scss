@@ -1,0 +1,31 @@
+.form-label {
+    color: rgba(0, 0, 0, 0.85);
+    vertical-align: middle;
+
+    &.required::after {
+        content: '*';
+        color: #f5222d;
+        display: inline-block;
+        margin-left: 4px;
+        line-height: 1;
+    }
+}
+
+.form-input {
+    &.has-error {
+        border-color: #f5222d;
+    }
+}
+
+.input-error-feedback {
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
+    color: #f5222d;
+    &.active {
+        opacity: 1;
+        height: auto;
+        color: #f5222d;
+        transition: all 1s;
+    }
+}
